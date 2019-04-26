@@ -33,7 +33,7 @@ dim COIN_URL = "https://www.hcoin.com/#/trade/usdt/btc"
 
 dim PASS = "abc123"
 
-dim hWeb = WebBrowser.Create("chrome","about:blank",1000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sBrowserPath":"","sStartArgs":""})
+dim hWeb = WebBrowser.Create("chrome","about:blank",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sBrowserPath":"","sStartArgs":""})
 
 dim strNames = File.Read(WILL,"utf-8")
 dim arrNames = Split(strNames,"\n")
