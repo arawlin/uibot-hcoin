@@ -29,7 +29,6 @@ dim DONE = HOME_PATH & "/done.txt"
 
 dim BASE_URL = "https://www.hcoin86.com/#/"
 dim COIN_URL = BASE_URL & "trade/hkdt/tutor"
-// dim COIN_URL = BASE_URL & "trade/usdt/btc"
 
 dim hWeb = WebBrowser.Create("chrome",BASE_URL & "login",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sBrowserPath":"","sStartArgs":""})
 
@@ -44,9 +43,9 @@ For Each n In arrNames
 TracePrint(n)
 
 dim account = Split(n, "\t")
-dim name = account[0]
-dim login_pass = account[1]
-dim trade_pass = account[2]
+dim name = account[1]
+dim login_pass = account[2]
+dim trade_pass = account[3]
 
 // open tab
 TracePrint("open tab")
@@ -69,7 +68,7 @@ Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"c
 // choose
 TracePrint("choose")
 
-WebBrowser.GoURL(hWeb,COIN_URL,true,[],10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})
+WebBrowser.GoURL(hWeb,COIN_URL,true,[],10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":1000})
 
 // #icon("@res:e502c810-94d5-ad7c-438d-0b38fe992713.png")
 // Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":"https://www.hcoin.com/#/home","title":"HCoin|好币网-区块链资产交易服务平台_好币网HCoin官网","tagName":"A","attrMap":{"tag":"A","aaname":"币币交易"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
@@ -88,15 +87,19 @@ TracePrint("sell")
 #icon("@res:681f45de-3132-179e-e6b9-3fcd973b1375.png")
 Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"*","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"hcoin_trade","css-selector":"div.bottom > div > div.bd-item"},"index":5}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":500,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
 #icon("@res:9a65fb7d-8598-aeae-739d-de9d8fcf0c41.png")
-Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"0.001300 HCOIN/USDT | HCoin 好币网","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"trade_form","aaname":"100%         "},"index":2}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"*","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"trade_form","aaname":"100%         "},"index":2}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
 #icon("@res:a278f199-7833-2844-d3a6-6cfbd16e341e.png")
-Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"0.001300 HCOIN/USDT | HCoin 好币网","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"trade_form","css-selector":"div.trade_form div.form-right div.hCoin-button"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"*","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"trade_form","css-selector":"div.trade_form div.form-right div.hCoin-button"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+
+
+#icon("@res:978a7935-56b6-4ee5-e796-c6482231bf9f.png")
+Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"0.080710 TUTOR/HKDT | HCoin 好币网","tagName":"BUTTON","attrMap":{"tag":"BUTTON","aaname":"           确定         "},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
 
 
 #icon("@res:ec3a245f-309a-6537-f8eb-6a0aa1aa4688.png")
-Keyboard.InputText({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":"https://www.hcoin86.com/#/trade/usdt/hcoin","title":"0.001420 HCOIN/USDT | HCoin 好币网","tagName":"INPUT","attrMap":{"tag":"INPUT","type":"password"},"index":0}},trade_pass,true,10,30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sKeyModifiers":[],"sSimulate":"default"})
+Keyboard.InputText({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"*","tagName":"INPUT","attrMap":{"tag":"INPUT","type":"password"},"index":0}},trade_pass,true,10,30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sKeyModifiers":[],"sSimulate":"default"})
 #icon("@res:1c399458-3489-b7b0-ab37-ce2f6c7b02d6.png")
-Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":"https://www.hcoin86.com/#/trade/usdt/hcoin","title":"0.001420 HCOIN/USDT | HCoin 好币网","tagName":"BUTTON","attrMap":{"tag":"BUTTON","parentid":"trade_form","aaname":"确 定"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"*","tagName":"BUTTON","attrMap":{"tag":"BUTTON","parentid":"trade_form","aaname":"确 定"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
 
 
 
