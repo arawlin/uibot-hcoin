@@ -1,0 +1,1 @@
+{"uuid":"374a32ea8ed294","flow":[{"rem":"uibot8d8abfc91bc9","type":"begin","next":"","x":0,"y":10},{"rem":"uibot374a32ea952d78","type":"task","desc":"hcoin_seller","in":"","out":"","file":"uibot3749fc5abc2e78.task","next":"","x":200,"y":10},{"rem":"uibot374a32ea9533ac","type":"task","desc":"test_case","in":"","out":"","file":"uibot587682dfc4686.task","next":"","x":200,"y":110}]}

@@ -1,0 +1,37 @@
+import Http
+import Ini
+import OCR
+import Word
+import Mail
+import CSV
+import Dialog
+import Clipboard
+import Time
+import App
+import Window
+import Mouse
+import Keyboard
+import Text
+import Image
+import WebBrowser
+import UiElement
+import Excel
+import Sys
+import File
+import Set
+import Regex
+
+dim COIN_URL= "https://www.hcoin.com/#/trade/usdt/hcoin"
+
+#icon("@res:681f45de-3132-179e-e6b9-3fcd973b1375.png")
+Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"*","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"hcoin_trade","css-selector":"div.bottom > div > div.bd-item"},"index":5}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+#icon("@res:9a65fb7d-8598-aeae-739d-de9d8fcf0c41.png")
+Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"0.001300 HCOIN/USDT | HCoin 好币网","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"trade_form","aaname":"100%         "},"index":2}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+#icon("@res:a278f199-7833-2844-d3a6-6cfbd16e341e.png")
+Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"0.001300 HCOIN/USDT | HCoin 好币网","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"trade_form","css-selector":"div.trade_form div.form-right div.hCoin-button"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+
+
+
+
+
+
