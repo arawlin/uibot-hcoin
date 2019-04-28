@@ -92,8 +92,8 @@ Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"c
 Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"*","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"trade_form","css-selector":"div.trade_form div.form-right div.hCoin-button"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
 
 
-#icon("@res:978a7935-56b6-4ee5-e796-c6482231bf9f.png")
-Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"0.080710 TUTOR/HKDT | HCoin 好币网","tagName":"BUTTON","attrMap":{"tag":"BUTTON","aaname":"           确定         "},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+// #icon("@res:978a7935-56b6-4ee5-e796-c6482231bf9f.png")
+// Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":COIN_URL,"title":"0.080710 TUTOR/HKDT | HCoin 好币网","tagName":"BUTTON","attrMap":{"tag":"BUTTON","aaname":"           确定         "},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
 
 
 #icon("@res:ec3a245f-309a-6537-f8eb-6a0aa1aa4688.png")
