@@ -83,8 +83,8 @@ WebBrowser.GoURL(hWeb,ACCOUNT_URL,true,[],10000,{"bContinueOnError":false,"iDela
 
 
 
-#icon("@res:ee64a47d-9c9c-12f9-1803-33946b582fa4.png")
-Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":ACCOUNT_URL,"title":"HCoin|好币网-区块链资产交易服务平台_好币网HCoin官网","tagName":"SPAN","attrMap":{"tag":"SPAN","isleaf":"1","css-selector":"body>div>div>section>main>section>main>div>div>label>span>span"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
+// #icon("@res:ee64a47d-9c9c-12f9-1803-33946b582fa4.png")
+// Mouse.Action({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":ACCOUNT_URL,"title":"HCoin|好币网-区块链资产交易服务平台_好币网HCoin官网","tagName":"SPAN","attrMap":{"tag":"SPAN","isleaf":"1","css-selector":"body>div>div>section>main>section>main>div>div>label>span>span"},"index":0}},"left","click",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"default"})
 
 // #icon("@res:c8374d8f-2f51-4137-8cb1-0023f8a6f26f.png")
 // dim balance = Text.Get({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":{"url":ACCOUNT_URL,"title":"HCoin|好币网-区块链资产交易服务平台_好币网HCoin官网","tagName":"DIV","attrMap":{"tag":"DIV","parentid":"main","css-selector":".el-table__row .cell-money-desensitized .cell"},"index":5}},30000,{"bContinueOnError":true,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true})

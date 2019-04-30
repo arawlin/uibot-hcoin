@@ -28,7 +28,7 @@ dim WILL = HOME_PATH & "/will.txt"
 dim DONE = HOME_PATH & "/done.txt"
 
 dim BASE_URL = "https://www.hcoin86.com/#/"
-dim COIN_URL = BASE_URL & "trade/hkdt/tutor"
+dim COIN_URL = BASE_URL & "trade/hkdt/cmdt"
 
 dim hWeb = WebBrowser.Create("chrome",BASE_URL & "login",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sBrowserPath":"","sStartArgs":""})
 
